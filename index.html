@@ -37,6 +37,11 @@
             </li>
           </ul>
         </nav>
+        <button class="button-burger js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+            <svg class="burger" width="32" height="22">
+                <use href="./images/icon.svg#burger"></use>
+            </svg>
+        </button>
         <address class="address">
           <ul class="address-list list">
             <li class="address-item link">
@@ -58,7 +63,7 @@
           <button type="button" class="section-one-btn" data-modal-open>Order Service</button>
         </div>
       </section>
-      <section class="section-two">
+    <section class="section-two">
         <div class="container">
             <h2 hidden class="section-two-title">Features</h2>
             <ul class="section-two-list list">
@@ -113,13 +118,14 @@
           </ul>
         </div>
       </section>
-      <section class="section-three">
+    <section class="section-three">
         <div class="container">
           <h2 class="section-three-title">What are we doing</h2>
           <ul class="section-three-list list">
             <li class="section-three-item">
               <img
                 src="./images/index/doing/comp-1.jpg"
+                srcset="./images/index/doing/comp-1@1x.jpg 1x, ./images/index/doing/comp-1@2x.jpg 2x"
                 alt="Computer monitor"
                 width="360"
                 class="section-three-img"
@@ -128,6 +134,7 @@
             <li class="section-three-item">
               <img
                 src="./images/index/doing/tel-2.jpg"
+                srcset="./images/index/doing/tel-2@1x.jpg 1x, ./images/index/doing/tel-2@2x.jpg 2x"
                 alt="Phone screen"
                 width="360"
                 class="section-three-img"
@@ -136,6 +143,7 @@
             <li class="section-three-item">
               <img
                 src="./images/index/doing/tel-and-hand-3.jpg"
+                srcset="./images/index/doing/tel-and-hand-3@1x.jpg 1x, ./images/index/doing/tel-and-hand-3@2x.jpg 2x"
                 alt="Phone in hand"
                 width="360"
                 class="section-three-img"
@@ -149,7 +157,7 @@
             <h2 class="section-four-title">Our Team</h2>
             <ul class="section-four-list list">
                 <li class="section-four-item">
-                    <img src="./images/index/team/team-man-1.jpg" alt="Smiling man" width="264" class="section-four-img" />
+                    <img src="./images/index/team/team-man-1.jpg" srcset="./images/index/team/team-man-1@1x.jpg 1x, ./images/index/team/team-man-1@2x.jpg 2x" alt="Smiling man" width="264" class="section-four-img" />
                     <div class="section-four-container">
                         <h3 class="section-four-subtitle">Mark Guerrero</h3>
                         <p class="section-four-text">Product Designer</p>
@@ -190,7 +198,7 @@
                     </div>
                 </li>
                 <li class="section-four-item">
-                    <img src="./images/index/team/team-man-2.jpg" alt="Smiling man" width="264" class="section-four-img" />
+                    <img src="./images/index/team/team-man-2.jpg" srcset="./images/index/team/team-man-2@1x.jpg 1x, ./images/index/team/team-man-2@2x.jpg 2x" alt="Smiling man" width="264" class="section-four-img" />
                     <div class="section-four-container">
                         <h3 class="section-four-subtitle">Tom Ford</h3>
                         <p class="section-four-text">Frontend Developer</p>
@@ -231,7 +239,7 @@
                     </div>
                 </li>
                 <li class="section-four-item">
-                    <img src="./images/index/team/team-woman-3.jpg" alt="Smiling woman" width="264"
+                    <img src="./images/index/team/team-woman-3.jpg" srcset="./images/index/team/team-woman-3@1x.jpg 1x, ./images/index/team/team-woman-3@2x.jpg 2x" alt="Smiling woman" width="264"
                         class="section-four-img" />
                     <div class="section-four-container">
                         <h3 class="section-four-subtitle">Camila Garcia</h3>
@@ -273,7 +281,7 @@
                     </div>
                 </li>
                 <li class="section-four-item">
-                    <img src="./images/index/team/team-man-4.jpg" alt="Smiling man" width="264" class="section-four-img" />
+                    <img src="./images/index/team/team-man-4.jpg" srcset="./images/index/team/team-man-4@1x.jpg 1x, ./images/index/team/team-man-4@2x.jpg 2x" alt="Smiling man" width="264" class="section-four-img" />
                     <div class="section-four-container">
                         <h3 class="section-four-subtitle">Daniel Wilson</h3>
                         <p class="section-four-text">UI Designer</p>
@@ -316,7 +324,7 @@
             </ul>
         </div>
     </section>
-      <section class="section-five">
+    <section class="section-five">
         <div class="container">
             <h2 class="section-five-title">Customers</h2>
             <ul class="section-five-list list">
@@ -427,6 +435,67 @@
       </div>
     </footer>
 
+    <div class="menu-container js-menu-container" id="mobile-menu">
+        <button class="modal-btn js-close-menu" type="button">
+            <svg class="modal-icon" width="8" height="8">
+                <use href="./images/icon.svg#icon-Vector"></use>
+            </svg>
+        </button>
+        <ul class="mobile-menu list">
+            <li>
+                <a href="" class="menu-link link current">Studio</a>
+            </li>
+            <li>
+                <a href="./portfolio.html" class="menu-link link">Portfolio</a>
+            </li>
+            <li>
+                <a href="" class="menu-link link">Contacts</a>
+            </li>
+        </ul>
+        <ul class="mobile-contacts list">
+            <li class="mobile-contacts-item link tel">
+                <a href="tel:+110001111111" class="mobile-contacts-link link">+11 (000) 111-11-11</a>
+            </li>
+            <li class="mobile-contacts-item link">
+                <a href="mailto:info@devstudio.com" class="mobile-contacts-link link  e-mail">info@devstudio.com</a>
+            </li>
+        </ul>
+        <ul class="mobile-socials"> <!--mobile socials-->
+            <li class="mobile-socials-list list ">
+                <a class="mobile-socials-link" href="https://instagram.com" target="_blank" rel="noopener noreferrer"
+                    aria-label="Instagram icon">
+                    <svg class="mobile-socials-svg" width="16" height="16">
+                        <use href="./images/icon.svg#icon-instagram"></use>
+                    </svg>
+                </a>
+            </li>
+            <li class="mobile-socials-list list">
+                <a class="mobile-socials-link" href="https://twitter.com" target="_blank" rel="noopener noreferrer"
+                    aria-label="Twitter icon">
+                    <svg class="mobile-socials-svg" width="16" height="16">
+                        <use href="./images/icon.svg#icon-twitter"></use>
+                    </svg>
+                </a>
+            </li>
+            <li class="mobile-socials-list list">
+                <a class="mobile-socials-link" href="https://facebook.com" target="_blank" rel="noopener noreferrer"
+                    aria-label="Facebook icon">
+                    <svg class="mobile-socials-svg" width="16" height="16">
+                        <use href="./images/icon.svg#icon-facebook"></use>
+                    </svg>
+                </a>
+            </li>
+            <li class="mobile-socials-list list">
+                <a class="mobile-socials-link" href="https://linkedin.com" target="_blank" rel="noopener noreferrer"
+                    aria-label="Linkedin icon">
+                    <svg class="mobile-socials-svg" width="16" height="16">
+                        <use href="./images/icon.svg#icon-linkedin"></use>
+                    </svg>
+                </a>
+            </li>
+        </ul>
+    </div>
+
     <div class="overlay is-hidden" data-modal>
         <div class="modal">
             <button class="modal-btn" type="button" data-modal-close>
@@ -460,7 +529,6 @@
                     </div>
                     <label class="modal-label" for="comment">Comment</label>
                     <textarea class="modal-textarea" name="comment" rows="5" placeholder="Text input"></textarea>
-                    
                     <label class="modal-label-span">
                         <input type="checkbox" class="checkbox">
                         <span class="modal-span">
@@ -473,5 +541,9 @@
         </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+        integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+        crossorigin="anonymous"></script>
+    <script defer src="js/mobile-menu.js"></script>
   </body>
 </html>
