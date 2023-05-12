@@ -36,6 +36,7 @@ p {
 .list {
     list-style: none;
     padding: 0;
+    margin: 0;
 }
 
 .link {
@@ -196,6 +197,7 @@ img {
 
 .address {
     font-style: normal;
+    
 }
 
 @media screen and (max-width: 1157px) {
@@ -214,8 +216,7 @@ img {
 @media screen and (min-width: 768px){
     .addess-list {
         display: block;
-        margin: 0;
-    }
+        }
 }
 
 @media screen and (min-width: 1158px){
@@ -224,12 +225,12 @@ img {
         gap: 40px;
     }
 }
-/*
+
 @media screen and (min-width: 768px) and (max-width: 1157px){
     .address-item:not(:last-child){
         margin-bottom: 12px;
     }
-}*/
+}
 
 .address-link {
     font-weight: 400;
